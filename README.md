@@ -16,13 +16,13 @@ $ yarn add @react-tool/hooks
 
 ## 📝 Documentation
 
-Documentation and examples are available at [Documentation]()
+Documentation and examples are available at [Documentation](https://github.com/react-tool/hooks/tree/main/docs#-documentation)
 
 <br />
 
 ## Hooks
 
-- [useToggle]()
-- [useInput]()
-- [useForm]()
-- [useOutsideClick]()
+- [useToggle](https://github.com/react-tool/hooks/tree/main/docs#usetoggle)
+- [useInput](https://github.com/react-tool/hooks/tree/main/docs#useinput)
+- [useForm](https://github.com/react-tool/hooks/tree/main/docs#useform)
+- [useOutsideClick](https://github.com/react-tool/hooks/tree/main/docs#useoutsideclick)

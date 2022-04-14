@@ -2,10 +2,10 @@
 
 ## 💡 Index
 
-- [useToggle]()
-- [useInput]()
-- [useForm]()
-- [useOutsideClick]()
+- [useToggle](https://github.com/react-tool/hooks/tree/main/docs#usetoggle)
+- [useInput](https://github.com/react-tool/hooks/tree/main/docs#useinput)
+- [useForm](https://github.com/react-tool/hooks/tree/main/docs#useform)
+- [useOutsideClick](https://github.com/react-tool/hooks/tree/main/docs#useoutsideclick)
 
 <br />
 
