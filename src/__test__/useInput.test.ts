@@ -21,4 +21,14 @@ describe("useInput", () => {
 
     expect(result.current[0]).toBe("testing");
   });
+
+  test("setValue can change value", () => {
+    const { result } = renderHook(() => useInput(""));
+
+    act(() => {
+      result.current[2]("testing");
+    });
+
+    expect(result.current[0]).toBe("testing");
+  });
 });
