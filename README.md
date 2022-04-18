@@ -27,3 +27,4 @@ Documentation and examples are available at [Documentation](https://github.com/r
 - [useForm](https://github.com/react-tool/hooks/tree/main/docs#useform)
 - [useOutsideClick](https://github.com/react-tool/hooks/tree/main/docs#useoutsideclick)
 - [useFullScreen](https://github.com/react-tool/hooks/tree/main/docs#usefullscreen)
+- [useDragScroll](https://github.com/react-tool/hooks/tree/main/docs#usedragscroll)

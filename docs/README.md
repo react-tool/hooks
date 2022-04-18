@@ -7,6 +7,7 @@
 - [useForm](https://github.com/react-tool/hooks/tree/main/docs#useform)
 - [useOutsideClick](https://github.com/react-tool/hooks/tree/main/docs#useoutsideclick)
 - [useFullScreen](https://github.com/react-tool/hooks/tree/main/docs#usefullscreen)
+- [useDragScroll](https://github.com/react-tool/hooks/tree/main/docs#usedragscroll)
 
 <br />
 
@@ -198,5 +199,44 @@ export default App;
 
 - `screenRef` (RefObject) : A function to set the ref of the element.
 - `onToggleFullScreen` (function) : A function to toggle the full screen.
+
+<br />
+
+## useDragScroll
+
+### Usage
+
+```jsx
+import React from "react";
+import { useDragScroll } from "@react-tool/hooks";
+
+function App() {
+  const { onDragStart, onDragMove, onDragEnd, scrollRef } = useDragScroll();
+
+  return (
+    <div
+      ref={scrollRef}
+      onMouseDown={onDragStart}
+      onMouseMove={onDragMove}
+      onMouseUp={onDragEnd}
+    >
+      {/*
+        list..
+      */}
+    </div>
+  );
+}
+
+export default App;
+```
+
+### Return value
+
+`{onDragStart, onDragMove, onDragEnd, scrollRef}`
+
+- `onDragStart` (function) : A function to start the drag.
+- `onDragMove` (function) : A function to move the drag.
+- `onDragEnd` (function) : A function to end the drag.
+- `scrollRef` (RefObject) : A function to set the ref of the element.
 
 <br />
