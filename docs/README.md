@@ -6,6 +6,7 @@
 - [useInput](https://github.com/react-tool/hooks/tree/main/docs#useinput)
 - [useForm](https://github.com/react-tool/hooks/tree/main/docs#useform)
 - [useOutsideClick](https://github.com/react-tool/hooks/tree/main/docs#useoutsideclick)
+- [useFullScreen](https://github.com/react-tool/hooks/tree/main/docs#usefullscreen)
 
 <br />
 
@@ -167,3 +168,35 @@ export default App;
 ### Return value
 
 - `ref` (function) : A function to set the ref of the element.
+
+<br />
+
+## useFullScreen
+
+### Usage
+
+```jsx
+import React from "react";
+import { useFullScreen } from "@react-tool/hooks";
+
+function App() {
+  const { screenRef, onToggleFullScreen } = useFullScreen();
+
+  return (
+    <div ref={screenRef} onDoubleClick={onToggleFullScreen}>
+      Screen
+    </div>
+  );
+}
+
+export default App;
+```
+
+### Return value
+
+`{screenRef, onToggleFullScreen}`
+
+- `screenRef` (RefObject) : A function to set the ref of the element.
+- `onToggleFullScreen` (function) : A function to toggle the full screen.
+
+<br />

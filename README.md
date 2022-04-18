@@ -26,3 +26,4 @@ Documentation and examples are available at [Documentation](https://github.com/r
 - [useInput](https://github.com/react-tool/hooks/tree/main/docs#useinput)
 - [useForm](https://github.com/react-tool/hooks/tree/main/docs#useform)
 - [useOutsideClick](https://github.com/react-tool/hooks/tree/main/docs#useoutsideclick)
+- [useFullScreen](https://github.com/react-tool/hooks/tree/main/docs#usefullscreen)
