@@ -9,4 +9,10 @@ describe("useToggle", () => {
     expect(onToggle).toBeInstanceOf(Function);
     expect(setValue).toBeInstanceOf(Function);
   });
+
+  test("useToggle default value is false", () => {
+    const { result } = renderHook(() => useToggle());
+    const [value] = result.current;
+    expect(value).toBe(false);
+  });
 });
