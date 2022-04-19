@@ -1,4 +1,4 @@
-import { renderHook } from "@testing-library/react-hooks";
+import { act, renderHook } from "@testing-library/react-hooks";
 import { useToggle } from "..";
 
 describe("useToggle", () => {
@@ -14,5 +14,15 @@ describe("useToggle", () => {
     const { result } = renderHook(() => useToggle());
     const [value] = result.current;
     expect(value).toBe(false);
+  });
+
+  test("onToggle function can change value reverse", () => {
+    const { result } = renderHook(() => useToggle(false));
+
+    act(() => {
+      result.current[1]();
+    });
+
+    expect(result.current[0]).toBe(true);
   });
 });
