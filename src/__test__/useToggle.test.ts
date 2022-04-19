@@ -25,4 +25,14 @@ describe("useToggle", () => {
 
     expect(result.current[0]).toBe(true);
   });
+
+  test("setValue function can change value", () => {
+    const { result } = renderHook(() => useToggle(false));
+
+    act(() => {
+      result.current[2](true);
+    });
+
+    expect(result.current[0]).toBe(true);
+  });
 });
