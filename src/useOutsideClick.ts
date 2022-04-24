@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef } from "react";
+import useWindowEventListener from "./useWindowEventListener";
 
 export default function useOutSideClick<T extends HTMLElement = HTMLDivElement>(
   isOpen: boolean,
@@ -16,12 +17,7 @@ export default function useOutSideClick<T extends HTMLElement = HTMLDivElement>(
     [isOpen, onClose]
   );
 
-  useEffect(() => {
-    window.addEventListener("click", onClickOutSide);
-    return () => {
-      window.removeEventListener("click", onClickOutSide);
-    };
-  }, [onClickOutSide]);
+  useWindowEventListener("click", onClickOutSide);
 
   return targetEl;
 }
