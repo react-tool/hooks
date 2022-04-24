@@ -8,6 +8,7 @@
 - [useOutsideClick](https://github.com/react-tool/hooks/tree/main/docs#useoutsideclick)
 - [useFullScreen](https://github.com/react-tool/hooks/tree/main/docs#usefullscreen)
 - [useDragScroll](https://github.com/react-tool/hooks/tree/main/docs#usedragscroll)
+- [useWindowEventListener](https://github.com/react-tool/hooks/tree/main/docs#usewindoweventlistener)
 
 <br />
 
@@ -238,5 +239,33 @@ export default App;
 - `onDragMove` (function) : A function to move the drag.
 - `onDragEnd` (function) : A function to end the drag.
 - `scrollRef` (RefObject) : A function to set the ref of the element.
+
+<br />
+
+## useWindowEventListener
+
+### Usage
+
+```jsx
+import React from "react";
+import { useWindowEventListener } from "@react-tool/hooks";
+
+function App() {
+  const onPrint = () => {
+    console.log("print");
+  };
+
+  useWindowEventListener("click", onPrint);
+
+  return <p>Hello</p>;
+}
+
+export default App;
+```
+
+### Parameters
+
+- `event` (keyof WindowEventMap) : The name of the event.
+- `handler` (function) : A function to handle the event.
 
 <br />
