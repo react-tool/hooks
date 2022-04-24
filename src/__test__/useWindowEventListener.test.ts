@@ -11,4 +11,17 @@ describe("useWindowEventListener", () => {
 
     expect(handler).toBeCalled();
   });
+
+  test("When multiple events are emitted, handler functions are executed", () => {
+    const clickHandler = jest.fn();
+    const keydownHandler = jest.fn();
+    renderHook(() => useWindowEventListener("click", clickHandler));
+    renderHook(() => useWindowEventListener("keydown", keydownHandler));
+
+    fireEvent.click(window);
+    fireEvent.keyDown(window);
+
+    expect(clickHandler).toHaveBeenCalledWith(expect.any(MouseEvent));
+    expect(keydownHandler).toHaveBeenCalledWith(expect.any(KeyboardEvent));
+  });
 });
