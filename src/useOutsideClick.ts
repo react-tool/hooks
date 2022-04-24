@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback, useRef } from "react";
 import useWindowEventListener from "./useWindowEventListener";
 
 export default function useOutSideClick<T extends HTMLElement = HTMLDivElement>(

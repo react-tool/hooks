@@ -4,15 +4,15 @@ export default function useWindowEventListener<K extends keyof WindowEventMap>(
   event: K,
   handler: (event: WindowEventMap[K]) => void
 ) {
-  const savedHandler = useRef<(event: WindowEventMap[K]) => void>();
+  const handlerRef = useRef<(event: WindowEventMap[K]) => void>();
 
   useEffect(() => {
-    savedHandler.current = handler;
+    handlerRef.current = handler;
   }, [handler]);
 
   useEffect(() => {
     const eventListener = (event: WindowEventMap[K]) =>
-      savedHandler.current!(event);
+      handlerRef.current!(event);
 
     window.addEventListener(event, eventListener);
 
