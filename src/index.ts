@@ -5,3 +5,4 @@ export { default as useOutsideClick } from "./useOutsideClick";
 export { default as useFullScreen } from "./useFullScreen";
 export { default as useDragScroll } from "./useDragScroll";
 export { default as useWindowEventListener } from "./useWindowEventListener";
+export { default as useResize } from "./useResize";
