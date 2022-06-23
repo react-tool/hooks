@@ -29,6 +29,7 @@ Documentation and examples are available at [Documentation](https://github.com/r
 - [useFullScreen](https://github.com/react-tool/hooks/tree/main/docs#usefullscreen)
 - [useDragScroll](https://github.com/react-tool/hooks/tree/main/docs#usedragscroll)
 - [useWindowEventListener](https://github.com/react-tool/hooks/tree/main/docs#usewindoweventlistener)
+- [useTitle](https://github.com/react-tool/hooks/tree/main/docs#useTitle)
 
 <br />
 
