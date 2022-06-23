@@ -20,7 +20,7 @@ Documentation and examples are available at [Documentation](https://github.com/r
 
 <br />
 
-## Hooks
+## 🪝 Hooks
 
 - [useToggle](https://github.com/react-tool/hooks/tree/main/docs#usetoggle)
 - [useInput](https://github.com/react-tool/hooks/tree/main/docs#useinput)
