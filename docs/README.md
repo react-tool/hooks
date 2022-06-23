@@ -9,6 +9,7 @@
 - [useFullScreen](https://github.com/react-tool/hooks/tree/main/docs#usefullscreen)
 - [useDragScroll](https://github.com/react-tool/hooks/tree/main/docs#usedragscroll)
 - [useWindowEventListener](https://github.com/react-tool/hooks/tree/main/docs#usewindoweventlistener)
+- [useTitle](https://github.com/react-tool/hooks/tree/main/docs#useTitle)
 
 <br />
 
@@ -267,5 +268,29 @@ export default App;
 
 - `event` (keyof WindowEventMap) : The name of the event.
 - `handler` (function) : A function to handle the event.
+
+<br />
+
+## useTitle
+
+### Usage
+
+```jsx
+import React from "react";
+import { useTitle } from "@react-tool/hooks";
+
+function App() {
+  useTitle("Login Page")
+
+  return <p>Login</p>;
+}
+
+export default App;
+
+```
+
+### Parameters
+
+- `title` (string) : The name of the page.
 
 <br />
